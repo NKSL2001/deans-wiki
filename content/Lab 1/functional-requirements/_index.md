@@ -18,7 +18,7 @@ weight = 10
         3.2.1. Web Users must provide their name.
         3.2.2. Web Users must provide their contact number.
         3.2.3. Web Users must provide the location of the crisis.
-        3.2.4. Web Users must be able to see crisis already reported on the same day upon entering location.
+        3.2.4. Web Users must be able to see nearby crisis reported on the same day upon entering location.
         3.2.5. Web Users must provide the type of assistance required, i.e. emergency ambulance, rescue and evacuation, fire-fighting and gas leak control.
     3.3. Web Users must be able to submit Crisis Report Form.
         3.3.1. Web Users must be able to see a success message when submit succeeds.
@@ -32,7 +32,7 @@ weight = 10
         5.2.1. Call Center Operators must provide the name.
         5.2.2. Call Center Operators must provide the contact number.
         5.2.3. Call Center Operators must provide the location of the crisis.
-        5.2.4. Call Center Operators must be able to see crisis already reported on the same day upon entering location.
+        5.2.4. Call Center Operators must be able to see nearby crisis reported on the same day upon entering location.
         5.2.5. Call Center Operators must provide the type of assistance required, i.e. emergency ambulance, rescue and evacuation, fire-fighting and gas leak control.
     5.3. Call Center Operators must be able to submit Crisis Report Form.
         5.3.1. Call Center Operators must be able to see a success message when submit succeeds.
