@@ -8,7 +8,8 @@ weight = 100
 `TODO`
 
 #### Entity-Relationship Diagram (ER Diagram)
-`TODO`
+
+<iframe frameborder="0" style="width:100%;height:1283px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ER%20diagram#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D14LNoq5PaOTifRYPDzSrjwfyeJu35KJZz%26export%3Ddownload"></iframe>
 
 #### Dialog Map
 
