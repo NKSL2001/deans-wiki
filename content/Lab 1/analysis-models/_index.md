@@ -17,7 +17,7 @@ weight = 100
 
 #### Decision Tables
 
-|Condition\Requirement Number| 1 | 2 | 3 | 4 | 5 | 6 | 
+|Condition\\Requirement Number| 1 | 2 | 3 | 4 | 5 | 6 | 
 |-----------------|---|---|---|---|---|---| 
 | isOperator      | F | T | T | T | T | T | 
 | isAdmin         | - | F | F | F | T | T | 
