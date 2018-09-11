@@ -19,10 +19,10 @@ weight = 100
 <table>
   <tr>
     <td/>
-    <td colspan="6">Requirement Number</td>
+    <td colspan="6"><strong>Requirement Number</strong></td>
   </tr>
   <tr>
-    <td>Condition</td>
+    <td><strong>Condition</strong></td>
     <td>1</td>
     <td>2</td>
     <td>3</td>
