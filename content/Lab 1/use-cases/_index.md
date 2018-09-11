@@ -19,9 +19,16 @@ Web User | 1.1 View Singapore Real-time Crisis Status In Web Client System
 Web User | 2.1 Report Crisis Using Crisis Report Form
 Public User | 2.2 Report Crisis to Call Center Operator
 Call Center Operator | 2.3 Report Crisis From Public Call
-Prime Minister Office | 3.1 Receive Singapore Crisis Status Summary Report
-Emergency Agencies | 3.2 Receive Crisis Intervention Request via SMS
-Public User | 3.3 Receive Civil Defence Shelter Locations From Facebook and Twitter
+Call Center Operator | 3.1 View Unresolved Reported Crisis
+Call Center Operator | 3.2 Edit Crisis Information
+Call Center Operator | 3.3 Dispatch Crisis Interventions
+Call Center Operator | 3.4 Resolve Crisis
+Admin User | 4.1 Edit System Settings
+Admin User | 4.2 Manage User Accounts
+Prime Minister’s Office | 5.1 Receive Singapore Crisis Status Summary Report
+Emergency Agencies | 5.2 Receive Crisis Intervention Request via SMS
+Public User | 5.3 Receive Civil Defence Shelter Locations From Facebook and Twitter
+
 
 ## Use Case Description
 #### 1.1
