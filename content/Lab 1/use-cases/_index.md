@@ -19,8 +19,8 @@ Web User | 1.1 View Singapore Real-time Crisis Status In Web Client System
 Web User | 2.1 Report Crisis Using Crisis Report Form
 Public User | 2.2 Report Crisis to Call Center Operator
 Call Center Operator | 2.3 Report Crisis From Public Call
-Call Center Operator | 3.1 View Unresolved Reported Crisis
-Call Center Operator | 3.2 Edit Crisis Information
+Call Center Operator | 3.1 View Reported Crisis
+Call Center Operator | 3.2 Edit Crisis Listing Information
 Call Center Operator | 3.3 Dispatch Crisis Interventions
 Call Center Operator | 3.4 Resolve Crisis
 Admin User | 4.1 Edit System Settings
@@ -132,7 +132,7 @@ Description: | Allow Call Center Operator to report crisis received from public 
 Trigger: | Call Center Operator received crisis report from public call
 Preconditions: | Call Center Operator has logged in
 Postconditions: | Call Center Operator has reported crisis
-Normal Flow: | 1. User goes to Call Center Operation Page<br>2. Website authenticates user<br>3. Call Center Operator fills in crisis report form (name, mobile number, location, type of assistance requested (emergency ambulance, rescue, and evacuation, fire-fighting, gas leak control)<br>4. Website validates crisis report form<br>5. Website sends crisis report to API Service System<br>6. Website shows confirmation
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Call Center Operator fills in crisis report form (name, mobile number, location, type of assistance requested (emergency ambulance, rescue, and evacuation, fire-fighting, gas leak control)<br>4. Website validates crisis report form<br>5. Website sends crisis report to API Service System<br>6. Website shows confirmation
 Alternative Flows: | -
 Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>4a. Website fails to validate crisis report form due to incompleteness<br><br>1. Website displays message that informs user of incomplete form<br>2. User may re-fill crisis report form<br>3. User may re-submit crisis report form, return to normal flow at step 4<br><br>5a. Website fails to send crisis report to API Service System<br><br>1. Website displays message that informs user of failed attempt<br>2. User may retry, return to normal flow at step 5
 Includes: | -
@@ -147,9 +147,177 @@ Notes and Issues: | -
 -|-
 ----|----
 Use Case ID: | 3.1
+Use Case Name: | View Reported Crisis
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Call Center Operator
+Description: | Allow Call Center Operator to view reported crisis
+Trigger: | -
+Preconditions: | Call Center Operator has logged in
+Postconditions: | Call Center Operator has viewed reported crisis
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Website fetches reported crisis<br>4. Website displays a list of reported crisis
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>3a. Website fails to fetch reported crisis<br><br>1. Website displays message that informs user of failed fetch<br>2. User may reload page, return to normal flow at step 3
+Includes: | -
+Priority: | High
+Frequency of Use: | High
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 3.2
+-|-
+----|----
+Use Case ID: | 3.2
+Use Case Name: | Edit Crisis Listing Information
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Call Center Operator
+Description: | Allow Call Center Operator to edit crisis information
+Trigger: | -
+Preconditions: | Call Center Operator has logged in
+Postconditions: | Call Center Operator has edited crisis information
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Website fetches reported crisis<br>4. Website displays a list of reported crisis<br>5. Call Center Operator edits a crisis listing<br>6. Call Center Operator submits edited crisis listing<br>7. Website sends updated crisis listing to API Service System<br>8. Website shows confirmation
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>3a. Website fails to fetch reported crisis<br><br>1. Website displays message that informs user of failed fetch<br>2. User may reload page, return to normal flow at step 3<br><br>7a. Website fails to send updated crisis listing to API Service System<br><br>1. Website displays message that informs user of failed submission<br>2. User may re-submit, return to normal flow at step 7
+Includes: | -
+Priority: | High
+Frequency of Use: | Medium
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 3.3
+-|-
+----|----
+Use Case ID: | 3.3
+Use Case Name: | Dispatch Crisis Interventions
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Call Center Operator
+Description: | Allow Call Center Operator to dispatch crisis interventions
+Trigger: | -
+Preconditions: | Call Center Operator has logged in
+Postconditions: | Call Center Operator has dispatched crisis interventions
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Website fetches reported crisis<br>4. Website displays a list of reported crisis<br>5. Call Center Operator clicks "dispatch" on a crisis listing<br>6. Call Center Operator reviews crisis listing<br>7. Call Center Operator confirms dispatch<br>8. Website sends crisis intervention dispatch request to API Service System<br>9. Website shows confirmation
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>3a. Website fails to fetch reported crisis<br><br>1. Website displays message that informs user of failed fetch<br>2. User may reload page, return to normal flow at step 3<br><br>8a. Website fails to send crisis intervention dispatch request to API Service System<br><br>1. Website displays message that informs user of failed request<br>2. User may re-send, return to normal flow at step 8
+Includes: | -
+Priority: | High
+Frequency of Use: | Medium
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 3.4
+-|-
+----|----
+Use Case ID: | 3.4
+Use Case Name: | Resolve Crisis
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Call Center Operator
+Description: | Allow Call Center Operator to mark a crisis listing as resolved
+Trigger: | -
+Preconditions: | Call Center Operator has logged in
+Postconditions: | Call Center Operator has marked a crisis listing as resolved
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Website fetches reported crisis<br>4. Website displays a list of reported crisis<br>5. Call Center Operator clicks "Resolve" on a crisis listing<br>6. Website sends crisis resolve request to API Service System<br>7. "Resolve" button becomes disabled
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>3a. Website fails to fetch reported crisis<br><br>1. Website displays message that informs user of failed fetch<br>2. User may reload page, return to normal flow at step 3<br><br>6a. Website fails to send crisis resolve request to API Service System<br><br>1. Website displays message that informs user of failed request<br>2. User may re-attempt, return to normal flow at step 6
+Includes: | -
+Priority: | High
+Frequency of Use: | Medium
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 4.1
+-|-
+----|----
+Use Case ID: | 4.1
+Use Case Name: | Edit System Settings
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Admin User
+Description: | Allow Admin User to edit system settings
+Trigger: | -
+Preconditions: | Admin User has logged in
+Postconditions: | Admin User has edited system settings
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Admin User goes to Setting Page<br>4. Admin User edits system settings (crisis type, assistance type, social media account, emergency agencies, summary reporting Email)<br>5. Admin User clicks "Apply"<br>6. Website sends system setting update request<br>7. Website shows confirmation
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br><br>3a. Setting Page is invisible due to insufficient user privilege<br><br>1. User may re-login using another account
+Includes: | -
+Priority: | Medium
+Frequency of Use: | Low
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 4.2
+-|-
+----|----
+Use Case ID: | 4.2
+Use Case Name: | Manage User Accounts
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Admin User
+Description: | Allow Admin User to manage user accounts
+Trigger: | -
+Preconditions: | Admin User has logged in
+Postconditions: | Admin User has done user account management operations
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Admin User goes to User Page<br>4. Admin User may create, edit or delete accounts
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br><br>3a. Setting Page is invisible due to insufficient user privilege<br><br>1. User may re-login using another account
+Includes: | -
+Priority: | Medium
+Frequency of Use: | Low
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 5.1
+-|-
+----|----
+Use Case ID: | 5.1
 Use Case Name: | Receive Singapore Crisis Status Summary Report
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
@@ -171,13 +339,13 @@ Special Requirements: | -
 Assumptions: | -
 Notes and Issues: | -
 
-#### 3.2
+#### 5.2
 -|-
 ----|----
-Use Case ID: | 3.2
+Use Case ID: | 5.2
 Use Case Name: | Receive Crisis Intervention Request via SMS
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
@@ -199,13 +367,13 @@ Special Requirements: | -
 Assumptions: | -
 Notes and Issues: | -
 
-#### 3.3
+#### 5.3
 -|-
 ----|----
-Use Case ID: | 3.3
+Use Case ID: | 5.3
 Use Case Name: | Receive Civil Defence Shelter Locations From Facebook and Twitter
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
