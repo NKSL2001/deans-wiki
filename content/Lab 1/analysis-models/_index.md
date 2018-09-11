@@ -10,11 +10,11 @@ weight = 100
 
 #### Entity-Relationship Diagram (ER Diagram)
 
-<iframe frameborder="0" style="width:100%;height:-431px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&layers=1&nav=1&title=ER%20diagram#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D14LNoq5PaOTifRYPDzSrjwfyeJu35KJZz%26export%3Ddownload"></iframe>
+<iframe frameborder="0" style="width:100%;height:431px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&layers=1&nav=1&title=ER%20diagram#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D14LNoq5PaOTifRYPDzSrjwfyeJu35KJZz%26export%3Ddownload"></iframe>
 
 #### Dialog Map
 
-<iframe frameborder="0" style="width:100%;height:597px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Dialog%20Map.html#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1PPxpYY9XT-8TiFQFEEy5Drvb61QO1U6r%26export%3Ddownload"></iframe>
+<iframe frameborder="0" style="width:100%;height:597px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&layers=1&nav=1&title=Dialog%20Map.html#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1PPxpYY9XT-8TiFQFEEy5Drvb61QO1U6r%26export%3Ddownload"></iframe>
 
 #### Decision Tables
 
