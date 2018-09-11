@@ -200,6 +200,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  position: relative;
   line-height: 1.5rem; }
 
 :disabled {
@@ -569,6 +570,10 @@ footer {
   color: #aaa;
   font-size: .95rem;
   margin: 0 1rem 0 20rem;
+  margin-left: -2rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
   padding: 1rem 4rem; }
   footer p {
     margin: 0px; }
