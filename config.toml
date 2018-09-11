@@ -47,11 +47,11 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
-# pre = "<h3>More</h3>"
-# name = "<i class='fa fa-github icon-fixed-width'></i> <label>Github repo</label>"
-# identifier = "ds"
-# url = "https://github.com/Deans-CMS/deans-wiki"
-# weight = 10
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github icon-fixed-width'></i> <label>Wiki repo</label>"
+identifier = "ds"
+url = "https://github.com/Deans-CMS/deans-wiki"
+weight = 10
 
 # [[menu.shortcuts]]
 # name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
