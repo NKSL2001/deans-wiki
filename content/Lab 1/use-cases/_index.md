@@ -132,7 +132,7 @@ Description: | Allow Call Center Operator to report crisis received from public 
 Trigger: | Call Center Operator received crisis report from public call
 Preconditions: | Call Center Operator has logged in
 Postconditions: | Call Center Operator has reported crisis
-Normal Flow: | 1. User goes to Call Center Operation Page<br>2. Website authenticates user<br>3. Call Center Operator fills in crisis report form (name, mobile number, location, type of assistance requested (emergency ambulance, rescue, and evacuation, fire-fighting, gas leak control)<br>4. Website validates crisis report form<br>5. Website sends crisis report to API Service System<br>6. Website shows confirmation
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Call Center Operator fills in crisis report form (name, mobile number, location, type of assistance requested (emergency ambulance, rescue, and evacuation, fire-fighting, gas leak control)<br>4. Website validates crisis report form<br>5. Website sends crisis report to API Service System<br>6. Website shows confirmation
 Alternative Flows: | -
 Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br>2. User may log in, return to normal flow at step 2<br><br>4a. Website fails to validate crisis report form due to incompleteness<br><br>1. Website displays message that informs user of incomplete form<br>2. User may re-fill crisis report form<br>3. User may re-submit crisis report form, return to normal flow at step 4<br><br>5a. Website fails to send crisis report to API Service System<br><br>1. Website displays message that informs user of failed attempt<br>2. User may retry, return to normal flow at step 5
 Includes: | -
@@ -143,13 +143,69 @@ Special Requirements: | -
 Assumptions: | -
 Notes and Issues: | -
 
-#### 3.1
+#### 4.1
 -|-
 ----|----
-Use Case ID: | 3.1
+Use Case ID: | 4.1
+Use Case Name: | Edit System Settings
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Admin User
+Description: | Allow Admin User to edit system settings
+Trigger: | -
+Preconditions: | Admin User has logged in
+Postconditions: | Admin User has edited system settings
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Admin User goes to Setting Page<br>4. Admin User edits system settings (crisis type, assistance type, social media account, emergency agencies, summary reporting Email)<br>5. Admin User clicks "Apply"<br>6. Website sends system setting update request<br>7. Website shows confirmation
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br><br>3a. Setting Page is invisible due to insufficient user privilege<br><br>1. User may re-login using another account
+Includes: | -
+Priority: | Medium
+Frequency of Use: | Low
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 4.2
+-|-
+----|----
+Use Case ID: | 4.2
+Use Case Name: | Manage User Accounts
+Created By: | Liu Mingyu
+Last Updated By: | Liu Mingyu
+Date Created: | 09/09/2018
+Date Last Updated: | 09/09/2018
+
+-|-
+----|----
+Actors: | Admin User
+Description: | Allow Admin User to manage user accounts
+Trigger: | -
+Preconditions: | Admin User has logged in
+Postconditions: | Admin User has done user account management operations
+Normal Flow: | 1. User goes to Control Portal Page<br>2. Website authenticates user<br>3. Admin User goes to User Page<br>4. Admin User may create, edit or delete accounts
+Alternative Flows: | -
+Exceptions: | 2a. Authentication fails due to user not logged in<br><br>1. Website redirects user to login page<br><br>3a. Setting Page is invisible due to insufficient user privilege<br><br>1. User may re-login using another account
+Includes: | -
+Priority: | Medium
+Frequency of Use: | Low
+Business Rules: | -
+Special Requirements: | -
+Assumptions: | -
+Notes and Issues: | -
+
+#### 5.1
+-|-
+----|----
+Use Case ID: | 5.1
 Use Case Name: | Receive Singapore Crisis Status Summary Report
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
@@ -171,13 +227,13 @@ Special Requirements: | -
 Assumptions: | -
 Notes and Issues: | -
 
-#### 3.2
+#### 5.2
 -|-
 ----|----
-Use Case ID: | 3.2
+Use Case ID: | 5.2
 Use Case Name: | Receive Crisis Intervention Request via SMS
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
@@ -199,13 +255,13 @@ Special Requirements: | -
 Assumptions: | -
 Notes and Issues: | -
 
-#### 3.3
+#### 5.3
 -|-
 ----|----
-Use Case ID: | 3.3
+Use Case ID: | 5.3
 Use Case Name: | Receive Civil Defence Shelter Locations From Facebook and Twitter
-Created By: | -
-Last Updated By: | -
+Created By: | Nicholas
+Last Updated By: | Liu Mingyu
 Date Created: | 09/09/2018
 Date Last Updated: | 09/09/2018
 
