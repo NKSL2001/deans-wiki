@@ -69,7 +69,7 @@ weight = 100
     <td>T</td>
   </tr>
   <tr>
-    <td>Action</td>
+    <td><strong>Action</strong></td>
     <td></td>
     <td></td>
     <td></td>
