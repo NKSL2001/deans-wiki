@@ -70,12 +70,7 @@ weight = 100
   </tr>
   <tr>
     <td><strong>Action</strong></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="6"/>
   </tr>
   <tr>
     <td>Accept Dispatch</td>
