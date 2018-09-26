@@ -5,9 +5,7 @@ weight = 2
 alwaysopen = true
 +++
 
-Architecture Design
-
-Deliverables
+# Architecture Design
 
 #### Main System
 
