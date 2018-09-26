@@ -16,9 +16,17 @@ Deliverables
 ##### Design Reason
 
 - Modifiability by decoupling the computation
+
 Each subsystem comply with predefined interfaces, which make each subsystem interchangable.
 
 - Concurrent execution and Scalability
+
 Each subsystem is ralativelly independent, which makes duplication of save module possible. By introducing duplications, the system could be highly availuable, and effieient.
 
 - Easy Integration
+
+#### Subsystems
+
+- [Web client subsystem]({{%relref "web-client" %}})
+- [API Subsystem]({{%relref "api-subsystem" %}})
+- [Notification Subsystem]({{%relref "notification-subsystem" %}})
