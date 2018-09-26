@@ -5,7 +5,7 @@ weight = 2
 alwaysopen = true
 +++
 
-Requirements Elicitation and Analysis
+Architecture Design
 
 Deliverables
 
