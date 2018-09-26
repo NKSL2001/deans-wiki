@@ -27,6 +27,8 @@ Each subsystem is relatively independent, which makes duplication of save module
 
 - Easy Integration
 
+Easy to put all parts together.
+
 #### Subsystems
 
 - [Web client subsystem]({{%relref "web-client" %}})
