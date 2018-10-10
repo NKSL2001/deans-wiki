@@ -46,53 +46,53 @@ weight = 10
 7. Call Center Operators must be able to edit crisis listing information.
 8. Call Center Operators must be able to dispatch crisis interventions for a crisis listing.
 9. Admin User must be able to login.
-    6.1. Admin User must provide their username.
-    6.2. Admin User must provide their password.
+    9.1. Admin User must provide their username.
+    9.2. Admin User must provide their password.
 10. Admin User must be able to change system settings.
-    7.1. Admin User must be able to update predefined crisis type.
-    7.2. Admin User must be able to update predefined assistance type.
-    7.3. Admin User must be able to update predefined social media account.
-    7.4. Admin User must be able to update phone number of emergency agencies.
-    7.5. Admin User must be able to update summary reporting Email.
+    10.1. Admin User must be able to update predefined crisis type.
+    10.2. Admin User must be able to update predefined assistance type.
+    10.3. Admin User must be able to update predefined social media account.
+    10.4. Admin User must be able to update phone number of emergency agencies.
+    10.5. Admin User must be able to update summary reporting Email.
 11. Admin User must be able to manage user accounts.
-    7.1. Admin User must be able to create new user account.
-        7.1.1. Admin User must provide username.
-        7.1.2. Admin User must provide password.
-        7.1.3. Admin User must provide role (Call Center Operator or Admin User).
-    7.2. Admin User must be able to edit user account.
-        7.1.1. Admin User may edit username.
-        7.1.2. Admin User may edit password.
-        7.1.3. Admin User may edit role (Call Center Operator or Admin User).
-    7.3. Admin User must be able to delete user account.
+    11.1. Admin User must be able to create new user account.
+        11.1.1. Admin User must provide username.
+        11.1.2. Admin User must provide password.
+        11.1.3. Admin User must provide role (Call Center Operator or Admin User).
+    11.2. Admin User must be able to edit user account.
+        11.2.1. Admin User may edit username.
+        11.2.2. Admin User may edit password.
+        11.2.3. Admin User may edit role (Call Center Operator or Admin User).
+    11.3. Admin User must be able to delete user account.
 </pre>
 
 #### API Service System
 <pre class="white">
-8. API Service System must be able to provide a real-time status update of Singapore.
-    8.1. API Service must be able to provide the weather conditions.
-    8.2. API Service must be able to provide dengue hotspots as coordinates.
-    8.3. API Service must be able to provide haze information as numeric values.
-9. API Service System must be able to process crisis report.
-    9.1. API Service System must be able to store crisis report into database.
-10. API Service System must be able to return a list of reported crisis.
-11. API Service System must be able to handle request of updating crisis listing information.
-12. API Service System must be able to handle request of authenticating user with username and password.
-13. API Service System must be able to handle request of dispatching crisis interventions.
-14. API Service System must be able to handle request of updating system settings.
-15. API Service System must be able to handle request of creating new user account.
-16. API Service System must be able to handle request of updating user account.
-17. API Service System must be able to handle request of deleting user account.
-    17.1. API Service System must be able to send crisis interventions request to Notification System.
-18. API Service System must be able to generate crisis status summary report every 30 minutes.
-    18.1. API Service System must be able to send crisis status summary report to Notification System.
-19. API Service System must be able to provide civil defence shelter locations.
-    19.1. API Service System must be able to fetch civil defence shelter locations.
-    19.2. API Service System must be able to send civil defence shelter locations to Notification System.
+12. API Service System must be able to provide a real-time status update of Singapore.
+    12.1. API Service must be able to provide the weather conditions.
+    12.2. API Service must be able to provide dengue hotspots as coordinates.
+    12.3. API Service must be able to provide haze information as numeric values.
+13. API Service System must be able to process crisis report.
+    13.1. API Service System must be able to store crisis report into database.
+14. API Service System must be able to return a list of reported crisis.
+15. API Service System must be able to handle request of updating crisis listing information.
+16. API Service System must be able to handle request of authenticating user with username and password.
+17. API Service System must be able to handle request of dispatching crisis interventions.
+18. API Service System must be able to handle request of updating system settings.
+19. API Service System must be able to handle request of creating new user account.
+20. API Service System must be able to handle request of updating user account.
+21. API Service System must be able to handle request of deleting user account.
+    21.1. API Service System must be able to send crisis interventions request to Notification System.
+22. API Service System must be able to generate crisis status summary report every 30 minutes.
+    22.1. API Service System must be able to send crisis status summary report to Notification System.
+23. API Service System must be able to provide civil defence shelter locations.
+    23.1. API Service System must be able to fetch civil defence shelter locations.
+    23.2. API Service System must be able to send civil defence shelter locations to Notification System.
 </pre>
 
 #### Notification System
 <pre class="white">
-20. Notification System must be able to send crisis status summary report to Prime Minister’s Office through Email.
-21. Notification System must be able to post civil defence shelter locations to Facebook and Twitter.
-22. Notification System must be able to send SMS to emergency agencies.
+24. Notification System must be able to send crisis status summary report to Prime Minister’s Office through Email.
+25. Notification System must be able to post civil defence shelter locations to Facebook and Twitter.
+26. Notification System must be able to send SMS to emergency agencies.
 </pre>
