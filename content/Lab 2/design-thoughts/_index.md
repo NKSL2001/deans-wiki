@@ -13,15 +13,15 @@ weight=80
 *First of all, by selecting Client-Server Architecture overhead:*
 
 #### Advantages:
-1. Centralization of control:
+`1. Centralization of control:`
 
 Access, resources and integrity of the data are controlled by the dedicated server so that a program or unauthorized client cannot damage the system. This centralization also facilitates task of updating data or other resources (better than the networks P2P).
 
-2. Scalability:
+`2. Scalability:`
 
 You can increase the capacity of clients and servers separately. Any element can be increased (or enhanced) at any time, or you can add new nodes to the network (clients or servers).
 
-3. Easy maintenance: 
+`3. Easy maintenance: `
 
 distribute the roles and responsibilities to several standalone computers, you can replace, repair, upgrade, or even move a server, while  customers will not be affected by that change (or minimally affect). This independence of the changes is also known as encapsulation.
 
@@ -31,12 +31,12 @@ There are technologies sufficiently developed, designed for the paradigm of C / 
 *Thus, over all, by using Independent Components, we will be able to:*
 
 
-1. Modifiability by decoupling the computation
+`1. Modifiability by decoupling the computation`
 
 
 Each subsystem comply with predefined interfaces, which make each subsystem interchangeable.
 
-2. Concurrent execution and Scalability
+`2. Concurrent execution and Scalability`
 
 
 Each subsystem is relatively independent, which makes duplication of save module possible. By introducing duplications, the system could be highly available, and efficient.
