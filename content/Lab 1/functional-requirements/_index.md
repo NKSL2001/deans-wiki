@@ -93,6 +93,12 @@ weight = 10
 #### Notification System
 <pre class="white">
 24. Notification System must be able to send crisis status summary report to Prime Minister’s Office through Email.
+    24.1 The email must be drafted within 10 seconds.
+    24.2 The summary report must be generated within 5 seconds.
 25. Notification System must be able to post civil defence shelter locations to Facebook and Twitter.
+    25.1 The information of the locations must be retireved within 10 seconds.
+    25.2 The locations must be posted within 15 seconds.
 26. Notification System must be able to send SMS to emergency agencies.
+    26.1 The SMS must be generated within 2 seconds.
+    26.2 The SMS must be sent within 5 seconds.
 </pre>
