@@ -4,8 +4,6 @@ description = ""
 weight = 30
 +++
 
-## API Specification
-
 #### Fetch real-time crisis list
 
 ```
