@@ -6,8 +6,7 @@ weight = 30
 
 ## API Specification
 
-Fetch real-time crisis list
----
+#### Fetch real-time crisis list
 
 ```
 GET /api/crisis/get_real_time_crisis_list
@@ -45,10 +44,7 @@ data: [
 ]
 ```
 
-
-
-Staff login
----
+#### Staff login
 
 ```
 POST /api/auth/login
