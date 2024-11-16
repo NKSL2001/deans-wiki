@@ -1,0 +1,62 @@
+name: Build docs site
+on:
+  workflow_dispatch: # manual trigger
+  push:
+    branches:
+      - master
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+      # Give the default GITHUB_TOKEN write permission to deploy GitHub Pages
+      pages: write
+      id-token: write
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      
+      - name: Pull & update theme files
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+
+      - name: Build site
+        run: ./bin/hugo --destination=docs
+
+      - name: Build deploying branch
+        run: |
+          find . -mindepth 1 -not -name '_docs' -not -name '.git' -not -path './.git/*' -not -path './docs*' -exec rm -rf {} +
+          mv docs/* .
+          rmdir docs
+      
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Build site
+          branch: gh-pages
+          create_branch: true
+          push_options: '--force'
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: .
+      
+      - name: Deploy artifact to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
