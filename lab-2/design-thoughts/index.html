@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dean&#39;s CMS</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2024-11-22T06:28:16 UTC">
+<title>Design Rationale :: Dean&#39;s CMS</title>
+<link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon" />
+<link href="../../css/nucleus.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/featherlight.min.css" rel="stylesheet">
+<link href="../../css/auto-complete.css" rel="stylesheet">
+<link href="../../theme-flex/style.css" rel="stylesheet">
+
+	<link href="../../theme-flex/variant-gray.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/lab-2/design-thoughts/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="../../">Dean&#39;s CMS</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/Deans-CMS/deans-wiki" target="_blank" rel="noopener">
+                  <i class='fa fa-github icon-fixed-width'></i> <label>Wiki repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="../../credits" target="_blank" rel="noopener">
+                  <i class='fa fa-bullhorn icon-fixed-width'></i> <label>Credits</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/lab-1/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="../../lab-1/">Lab 1</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/lab-1/use-cases/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-1/use-cases/">Use Cases</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-1/functional-requirements/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-1/functional-requirements/">Functional Requirements</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-1/non-functional-requirements/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-1/non-functional-requirements/">Non-functional Requirements</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-1/analysis-models/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-1/analysis-models/">Analysis Models</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/lab-2/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="../../lab-2/">Lab 2</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/lab-2/api-subsystem/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-2/api-subsystem/">API Subsystem</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-2/notification-subsystem/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-2/notification-subsystem/">Notification Subsystem</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-2/web-client/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-2/web-client/">Web-client Subsystem</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/lab-2/design-thoughts/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-2/design-thoughts/">Design Rationale</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/lab-3/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="../../lab-3/">Lab 3</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/lab-3/api-specification/" class="dd-item
+        ">
+      <div>
+      <a href="../../lab-3/api-specification/">API Specification</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/how-to-use/" class="dd-item alwaysopen
+        ">
+      <div>
+      <a href="../../how-to-use/">How To Use</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/lab-1/" >
+   Lab 1</option> 
+    <option value="/lab-1/use-cases/" >
+  - 
+   Use Cases</option>
+    <option value="/lab-1/functional-requirements/" >
+  - 
+   Functional Requirements</option>
+    <option value="/lab-1/non-functional-requirements/" >
+  - 
+   Non-functional Requirements</option>
+    <option value="/lab-1/analysis-models/" >
+  - 
+   Analysis Models</option>
+  
+    <option value="/lab-2/" >
+   Lab 2</option> 
+    <option value="/lab-2/api-subsystem/" >
+  - 
+   API Subsystem</option>
+    <option value="/lab-2/notification-subsystem/" >
+  - 
+   Notification Subsystem</option>
+    <option value="/lab-2/web-client/" >
+  - 
+   Web-client Subsystem</option>
+    <option value="/lab-2/design-thoughts/"  selected>
+  - 
+   Design Rationale</option> 
+  
+  
+    <option value="/lab-3/" >
+   Lab 3</option> 
+    <option value="/lab-3/api-specification/" >
+  - 
+   API Specification</option>
+  
+    <option value="/how-to-use/" >
+   How To Use</option> 
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>Design Rationale</h1>
+    
+    
+    
+
+
+
+<p><em>By designing a combination of Client-Server Architecture and MVC pattern.</em></p>
+
+<p><em>The whole system contains three main components with Client-Server architecture.</em>
+<em>MVC pattern are used in API Service Subsystem Logic.</em></p>
+
+<p><em>Rationale and advantages are as followed:</em>
+<em>First of all, by selecting Client-Server Architecture overhead:</em></p>
+
+<h4 id="advantages">Advantages:</h4>
+
+<p><code>1. Centralization of control:</code></p>
+
+<p>Access, resources and integrity of the data are controlled by the dedicated server so that a program or unauthorized client cannot damage the system. This centralization also facilitates task of updating data or other resources (better than the networks P2P).</p>
+
+<p><code>2. Scalability:</code></p>
+
+<p>You can increase the capacity of clients and servers separately. Any element can be increased (or enhanced) at any time, or you can add new nodes to the network (clients or servers).</p>
+
+<p><code>3. Easy maintenance:</code></p>
+
+<p>distribute the roles and responsibilities to several standalone computers, you can replace, repair, upgrade, or even move a server, while  customers will not be affected by that change (or minimally affect). This independence of the changes is also known as encapsulation.</p>
+
+<p>There are technologies sufficiently developed, designed for the paradigm of C / S to ensure security in transactions, interface friendliness, and ease of use.</p>
+
+<p><em>Thus, over all, by using Independent Components, we will be able to:</em></p>
+
+<p><code>1. Modifiability by decoupling the computation</code></p>
+
+<p>Each subsystem comply with predefined interfaces, which make each subsystem interchangeable.</p>
+
+<p><code>2. Concurrent execution and Scalability</code></p>
+
+<p>Each subsystem is relatively independent, which makes duplication of save module possible. By introducing duplications, the system could be highly available, and efficient.</p>
+
+<p><em>To explore more detailed design, by selecting MVC for API Service System:</em></p>
+
+<p>It divides a given software application into three interconnected parts, so as to separate internal representations of information from the ways that information is presented to or accepted from the user. With advantages:</p>
+
+<ol>
+<li><p>Faster development process: MVC supports rapid and parallel development. With MVC, one programmer can work on the view while other can work on the controller to create business logic of the web application. The application developed using MVC can be faster than application developed using other development patterns.</p></li>
+
+<li><p>Ability to provide multiple views: In the MVC Model, you can create multiple views for a model. Code duplication is very limited in MVC because it separates data and business logic from the display.</p></li>
+
+<li><p>Support for asynchronous technique: MVC also supports asynchronous technique, which helps developers to develop an application that loads very fast.</p></li>
+
+<li><p>Modification does not affect the entire model: Modification does not affect the entire model because model part does not depend on the views part. Therefore, any changes in the Model will not affect the entire architecture.</p></li>
+
+<li><p>MVC model returns the data without formatting: MVC pattern returns data without applying any formatting so the same components can be used and called for use with any interface.</p></li>
+</ol>
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/Deans-CMS/deans-wiki/edit/master/content/Lab%202/design-thoughts/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p>© 2018 Dean</p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="../../js/clipboard.min.js"></script>
+<script src="../../js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../js/search.js"></script>
+<script src="../../theme-flex/script.js"></script>
+
+
+
+
+<script src="../../js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
+</html>
